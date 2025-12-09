@@ -37,12 +37,7 @@ const Header = () => {
             <Link to="/departments" className="text-gray-700 hover:text-blue-600 transition">Departments</Link>
             <Link to="/about" className="text-gray-700 hover:text-blue-600 transition">About</Link>
             <Link to="/contacts" className="text-gray-700 hover:text-blue-600 transition">Contact</Link>
-            <Link 
-              to="/appointments" 
-              className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
-            >
-              Book Appointment
-            </Link>
+            
           </nav>
 
           <button 
@@ -62,13 +57,7 @@ const Header = () => {
             <Link to="/departments" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>Departments</Link>
             <Link to="/about" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>About</Link>
             <Link to="/contacts" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
-            <Link 
-              to="/appointments" 
-              className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition text-center mt-2"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Book Appointment
-            </Link>
+            
           </nav>
         )}
       </div>
