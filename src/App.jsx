@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import { Heart, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
@@ -33,10 +33,16 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <Link to="/" className="text-gray-700 hover:text-blue-600 transition">Home</Link>
-            <Link to="/services" className="text-gray-700 hover:text-blue-600 transition">Services</Link>
-            <Link to="/departments" className="text-gray-700 hover:text-blue-600 transition">Departments</Link>
-            <Link to="/about" className="text-gray-700 hover:text-blue-600 transition">About</Link>
-            <Link to="/contacts" className="text-gray-700 hover:text-blue-600 transition">Contact</Link>
+            <Link to="/#/services" className="text-gray-700 hover:text-blue-600 transition">Services</Link>
+            <Link to="/#/departments" className="text-gray-700 hover:text-blue-600 transition">Departments</Link>
+            <Link to="/#/about" className="text-gray-700 hover:text-blue-600 transition">About</Link>
+            <Link to="/#/contacts" className="text-gray-700 hover:text-blue-600 transition">Contact</Link>
+            <Link 
+              to="/#/appointments" 
+              className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
+            >
+              Book Appointment
+            </Link>
           </nav>
 
           <button 
@@ -52,12 +58,12 @@ const Header = () => {
         {mobileMenuOpen && (
           <nav className="md:hidden py-4 border-t flex flex-col space-y-2">
             <Link to="/" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-            <Link to="/services" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>Services</Link>
-            <Link to="/departments" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>Departments</Link>
-            <Link to="/about" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>About</Link>
-            <Link to="/contacts" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+            <Link to="/#/services" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>Services</Link>
+            <Link to="/#/departments" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>Departments</Link>
+            <Link to="/#/about" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>About</Link>
+            <Link to="/#/contacts" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
             <Link 
-              to="/appointments" 
+              to="/#/appointments" 
               className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition text-center mt-2"
               onClick={() => setMobileMenuOpen(false)}
             >
