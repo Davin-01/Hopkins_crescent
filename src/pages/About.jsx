@@ -8,11 +8,11 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">About Hopkins Crescent Hospital</h2>
-              <p className="text-gray-600 mb-4">For over three decades, Hopkins Crescent Hospital has been at the forefront of providing exceptional healthcare services to our community. Our commitment to medical excellence, patient-centered care, and continuous innovation has made us a trusted healthcare provider.</p>
+              <p className="text-gray-600 mb-4">The Hopkins Crescent Hospitals was founded in September 2020. It is located along the busy Kanduyi- Bungoma Road, Next to the Shell petrol station. The Hospital facility is registered as a Private Limited Company (PLC) by the Registrar of companies. It is also registered by the Kenya Medical Practitioners and Dentists Board as a level 4 facility. It offers Inpatient and outpatient services. We have a 50- 65 bed capacity to cater for the inpatient. </p>
               <p className="text-gray-600 mb-4">Our team of highly qualified doctors, nurses, and healthcare professionals work tirelessly to ensure every patient receives personalized care tailored to their unique needs.</p>
               <div className="grid grid-cols-3 gap-6 mt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">30+</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">5+</div>
                   <div className="text-gray-600">Years of Service</div>
                 </div>
                 <div className="text-center">
@@ -20,7 +20,7 @@ const About = () => {
                   <div className="text-gray-600">Medical Staff</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">50K+</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">20K+</div>
                   <div className="text-gray-600">Patients Annually</div>
                 </div>
               </div>

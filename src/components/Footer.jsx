@@ -17,7 +17,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <p className="text-gray-400 text-sm max-w-md mx-auto">
-                        Dedicated to providing compassionate healthcare for over 25 years.
+                        Dedicated to providing compassionate healthcare for over 5 years.
                     </p>
                 </div>
 
@@ -25,11 +25,11 @@ const Footer = () => {
                 <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm text-gray-400">
                     <div className="flex items-center space-x-2">
                         <Phone size={16} />
-                        <span>(555) 123-4567</span>
+                        <span> +254 748 206 580 </span>
                     </div>
                     <div className="flex items-center space-x-2">
                         <Mail size={16} />
-                        <span>care@hopkinshospital.com</span>
+                        <span> info@thehopkinshospital.co.ke </span>
                     </div>
                 </div>
 

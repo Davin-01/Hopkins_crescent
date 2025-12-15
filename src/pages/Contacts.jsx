@@ -17,8 +17,8 @@ const Contacts = () => {
                 <Phone className="text-blue-600" size={24} />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Phone</h3>
-              <p className="text-gray-600">Main: (555) 123-4567</p>
-              <p className="text-gray-600">Emergency: 911</p>
+              <p className="text-gray-600">Main: +254 748 206 580 </p>
+              <p className="text-gray-600">Emergency: +254 748 206 580 </p>
             </div>
             
             <div className="text-center p-6 bg-gray-50 rounded-xl">
@@ -26,8 +26,8 @@ const Contacts = () => {
                 <MapPin className="text-blue-600" size={24} />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Address</h3>
-              <p className="text-gray-600">123 Hopkins Crescent</p>
-              <p className="text-gray-600">Medical District, MD 12345</p>
+              <p className="text-gray-600">P.O. BOX 2338-50200. </p>
+              <p className="text-gray-600">KANDUYI-BUNGOMA ROAD, NEXT TO SHELL </p>
             </div>
             
             <div className="text-center p-6 bg-gray-50 rounded-xl">
