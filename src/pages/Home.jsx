@@ -50,7 +50,7 @@ const Home = () => {
       <section className="relative bg-transparent text-white py-14 sm:py-20 md:py-24 lg:py-32 overflow-hidden min-h-[600px] sm:min-h-[700px] flex items-center">
         {/* Background Image with Mobile Optimization */}
        <div 
-  className="absolute inset-0 bg-cover bg-center opacity-90"
+  className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-90"
   style={{
     backgroundImage: `url(${BackgroundImage})`,
     backgroundPosition: 'center center',
@@ -60,7 +60,7 @@ const Home = () => {
 
         
         {/* Gradient Overlay - Enhanced for Mobile */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-900/50 to-blue-900/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-45"></div>
         
         {/* Content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">

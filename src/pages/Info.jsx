@@ -27,6 +27,7 @@ import {
   ChevronDown,
   ChevronUp
 } from 'lucide-react';
+import BgImage from '../assets/background.jpeg';
 
 const Info = () => {
   const [expandedFaq, setExpandedFaq] = useState(null);
@@ -194,21 +195,36 @@ const Info = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16 sm:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-white/20 backdrop-blur-sm rounded-full mb-6">
-              <Building2 size={40} />
-            </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
-              About Hopkins Crescent Hospital
-            </h1>
-            <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-              Your trusted healthcare partner committed to excellence in medical care since 2020
-            </p>
-          </div>
-        </div>
-      </section>
+      <section className="relative text-white py-16 sm:py-20 overflow-hidden">
+  
+  {/* Background Image */}
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: `url(${BgImage})` }}
+  ></div>
+
+  {/* Gradient Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-30"></div>
+
+  {/* Content */}
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center">
+      <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-white/20 backdrop-blur-sm rounded-full mb-6">
+        <Building2 size={40} />
+      </div>
+
+      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
+        About Hopkins Referral Hospitals
+      </h1>
+
+      <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+        Your trusted healthcare partner committed to excellence in medical care since 2020
+      </p>
+    </div>
+  </div>
+
+</section>
+
 
       {/* Hospital Overview */}
       <section className="py-12 sm:py-16 lg:py-20 bg-white">

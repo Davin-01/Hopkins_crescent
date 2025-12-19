@@ -6,7 +6,6 @@ import { useState } from 'react';
 // Import pages
 import Home from './pages/Home';
 import Services from './pages/Services';
-import Departments from './pages/Departments';
 import About from './pages/About';
 import Contacts from './pages/Contacts';
 import Info from './pages/Info';
@@ -34,7 +33,6 @@ const Header = () => {
           <nav className="hidden md:flex space-x-8">
             <Link to="/" className="text-gray-700 hover:text-blue-600 transition">Home</Link>
             <Link to="/services" className="text-gray-700 hover:text-blue-600 transition">Services</Link>
-            <Link to="/departments" className="text-gray-700 hover:text-blue-600 transition">Departments</Link>
             <Link to="/about" className="text-gray-700 hover:text-blue-600 transition">About</Link>
             <Link to="/contacts" className="text-gray-700 hover:text-blue-600 transition">Contact</Link>
             
@@ -54,7 +52,6 @@ const Header = () => {
           <nav className="md:hidden py-4 border-t flex flex-col space-x-2">
             <Link to="/" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>Home</Link>
             <Link to="/services" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>Services</Link>
-            <Link to="/departments" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>Departments</Link>
             <Link to="/about" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>About</Link>
             <Link to="/contacts" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
             
@@ -75,7 +72,6 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/departments" element={<Departments />} />
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/info" element={<Info />} />
