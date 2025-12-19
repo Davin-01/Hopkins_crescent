@@ -9,7 +9,7 @@ import Services from './pages/Services';
 import Departments from './pages/Departments';
 import About from './pages/About';
 import Contacts from './pages/Contacts';
-import Appointments from './pages/Appointments';
+import Info from './pages/Info';
 import Footer from './components/Footer';
 
 // Header Component
@@ -51,7 +51,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="md:hidden py-4 border-t flex flex-col space-y-2">
+          <nav className="md:hidden py-4 border-t flex flex-col space-x-2">
             <Link to="/" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>Home</Link>
             <Link to="/services" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>Services</Link>
             <Link to="/departments" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>Departments</Link>
@@ -78,7 +78,7 @@ export default function App() {
             <Route path="/departments" element={<Departments />} />
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
-            <Route path="/appointments" element={<Appointments />} />
+            <Route path="/info" element={<Info />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </main>
