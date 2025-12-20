@@ -2,6 +2,7 @@ import React from 'react';
 import { HashRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import { Heart, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import logo from './assets/logo.jpeg';
 
 // Import pages
 import Home from './pages/Home';
@@ -20,12 +21,16 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-              <Heart className="text-white" size={24} />
-            </div>
+            <div className="w-20 h-10 bg-gray-600 rounded-lg flex items-center justify-center">
+                                        <img
+                                            src={logo}
+                                            alt="Logo"
+                                            className="w-35 h-35 object-contain"
+                                        />
+                                        </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Hopkins Crescent</h1>
-              <p className="text-sm text-gray-600">Hospital</p>
+              <h1 className="text-2xl font-bold text-gray-900">Hopkins Referral</h1>
+              <p className="text-sm font-bold text-gray-700">Hospitals</p>
             </div>
           </Link>
           

@@ -50,7 +50,7 @@ const Home = () => {
       <section className="relative bg-transparent text-white py-14 sm:py-20 md:py-24 lg:py-32 overflow-hidden min-h-[600px] sm:min-h-[700px] flex items-center">
         {/* Background Image with Mobile Optimization */}
        <div 
-  className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-90"
+  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
   style={{
     backgroundImage: `url(${BackgroundImage})`,
     backgroundPosition: 'center center',
@@ -60,7 +60,7 @@ const Home = () => {
 
         
         {/* Gradient Overlay - Enhanced for Mobile */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-45"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-35"></div>
         
         {/* Content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
@@ -76,7 +76,7 @@ const Home = () => {
             </h1>
             
             {/* Description - Mobile Optimized */}
-            <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 font-medium text-blue-100 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 font-semibold text-white leading-relaxed">
               Founded in September 2020, located along the busy Kanduyi-Bungoma Road, next to Shell petrol station. 
               Registered as a Private Limited Company and certified as a Level 4 facility by the Kenya Medical Practitioners 
               and Dentists Board. We offer comprehensive inpatient and outpatient services with 50-65 bed capacity.
