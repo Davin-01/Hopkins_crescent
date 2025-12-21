@@ -47,62 +47,70 @@ const Home = () => {
   return (
     <div className="overflow-x-hidden mb-2">
       {/* Hero Section - Mobile Optimized */}
-      <section className="relative bg-transparent text-white py-14 sm:py-20 md:py-24 lg:py-32 overflow-hidden min-h-[600px] sm:min-h-[700px] flex items-center">
-        {/* Background Image with Mobile Optimization */}
-       <div 
-  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-  style={{
-    backgroundImage: `url(${BackgroundImage})`,
-    backgroundPosition: 'center center',
-    backgroundSize: 'cover'
-  }}
-></div>
+      {/* HERO SECTION – RESPONSIVE + ANIMATED */}
+<section className="relative min-h-screen flex items-center overflow-hidden">
 
-        
-        {/* Gradient Overlay - Enhanced for Mobile */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-35"></div>
-        
-        {/* Content */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-          <div className="max-w-3xl">
-            {/* Badge */}
-            <div className="inline-block bg-white/20 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full mb-4 sm:mb-6">
-              <span className="text-xs sm:text-sm font-semibold">🏥 Trusted Healthcare Provider Since 2020</span>
-            </div>
-            
-            {/* Main Heading - Mobile Responsive */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
-              Hopkins Referral Hospitals
-            </h1>
-            
-            {/* Description - Mobile Optimized */}
-            <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 font-semibold text-white leading-relaxed">
-              Founded in September 2020, located along the busy Kanduyi-Bungoma Road, next to Shell petrol station. 
-              Registered as a Private Limited Company and certified as a Level 4 facility by the Kenya Medical Practitioners 
-              and Dentists Board. We offer comprehensive inpatient and outpatient services with 50-65 bed capacity.
-            </p>
-            
-            {/* CTA Buttons - Mobile Stack */}
-           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <Link
-                    to="/Info"
-                    className="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-blue-50 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center flex items-center justify-center gap-2"
-                  >
-                    More Info
-                    <ArrowRight size={18} />
-                  </Link>
+  {/* Background Image */}
+  <div
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: `url(${BackgroundImage})` }}
+  />
 
-                  <Link
-                    to="/Contacts"
-                    className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition text-center"
-                  >
-                    Emergency Info
-                  </Link>
-</div>
 
-          </div>
-        </div>
-      </section>
+  {/* Overlay */}
+   <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 via-blue-800/30 to-blue-700/20" />
+
+
+  {/* Content */}
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div className="max-w-3xl">
+
+      {/* Badge – Desktop Only */}
+      <div className="hidden lg:inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+        <span className="text-sm font-semibold">
+          🏥 Trusted Healthcare Provider Since 2020
+        </span>
+      </div>
+
+      {/* Animated Title */}
+      <h1 className="text-3xl text-white sm:text-5xl lg:text-6xl font-extrabold leading-tight animate-float-slow">
+        Hopkins Referral Hospital
+      </h1>
+
+      {/* Mobile Description */}
+      <p className="mt-4 text-sm sm:text-base text-white font-semibold lg:hidden">
+        A Level 4 certified hospital .
+      </p>
+
+      {/* Full Desktop Description (YOUR ORIGINAL CONTENT) */}
+      <p className="hidden lg:block mt-6 text-lg font-semibold text-white leading-relaxed">
+        Founded in September 2020, located along the busy Kanduyi-Bungoma Road, next to Shell petrol station.
+        Registered as a Private Limited Company and certified as a Level 4 facility by the Kenya Medical
+        Practitioners and Dentists Board. We offer comprehensive inpatient and outpatient services with
+        50–65 bed capacity.
+      </p>
+
+      {/* CTA Buttons */}
+      <div className="mt-8 flex flex-col sm:flex-row gap-4">
+        <Link
+          to="/Info"
+          className="inline-flex items-center justify-center gap-2 bg-white text-blue-700 px-7 py-3 rounded-lg font-semibold shadow-lg hover:bg-blue-50 transition"
+        >
+          More Info <ArrowRight size={18} />
+        </Link>
+
+        <Link
+          to="/Contacts"
+          className="inline-flex items-center justify-center border-2 border-white text-white px-7 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition"
+        >
+          Contact Us
+        </Link>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       {/* Emergency Banner - Mobile Optimized */}
       <section className="bg-gradient-to-r from-red-600 to-red-700 text-white py-4 sm:py-6 shadow-lg">
